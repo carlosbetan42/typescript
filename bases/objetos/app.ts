@@ -25,7 +25,7 @@
       console.log('Disparando');
     },
   };
-
+  console.log('paso 1');
   // Villanos debe de ser un arreglo de objetos personalizados
   type Villano = {
     nombre: string;
@@ -56,7 +56,7 @@
     poder: string;
     estatura: number;
   };
-
+  console.log('paso 2');
   // cree dos tipos, uno para charles y otro para apocalipsis
   const charles: Charles = {
     poder: 'psiquico',
@@ -72,6 +72,8 @@
     lider: true,
     miembros: ['Magneto', 'Tormenta', 'Psylocke', 'Angel'],
   };
+
+  console.log(apocalipsis);
 
   // Mystique, debe poder ser cualquiera de esos dos mutantes (charles o apocalipsis)
   let mystique: Charles | Apocalipsis;
